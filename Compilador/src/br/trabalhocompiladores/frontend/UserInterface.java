@@ -1,8 +1,5 @@
 package br.trabalhocompiladores.frontend;
 
-
-	
-import br.trabalhocompiladores.frontend.utils.NumeroBorda;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -127,7 +124,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnNew, gbc_btnNew);
         btnNew.addActionListener(arg0 -> newFile());
         btnNew.setFocusable(false);
-        //btnNew.setIcon(new ImageIcon(getClass().getResource("../../../icons/new-file.png")));
         btnNew.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnNew.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -139,9 +135,7 @@ public class UserInterface extends JFrame {
         gbc_btnOpen.gridy = 0;
         buttonPanel.add(btnOpenFile, gbc_btnOpen);
         btnOpenFile.addActionListener(e -> openFile());
-
         btnOpenFile.setFocusable(false);
-        //btnOpenFile.setIcon(new ImageIcon(getClass().getResource("../../../icons/open-file.png")));
         btnOpenFile.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnOpenFile.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -154,7 +148,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnSave, gbc_btnSave);
         btnSave.addActionListener(e -> saveFile());
         btnSave.setFocusable(false);
-//        btnSave.setIcon(new ImageIcon(getClass().getResource("../../../icons/save.png")));
         btnSave.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnSave.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -167,7 +160,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnCopy, gbc_btnCopy);
         btnCopy.addActionListener(e -> copy());
         btnCopy.setFocusable(false);
-//        btnCopy.setIcon(new ImageIcon(getClass().getResource("../../../icons/copy.png")));
         btnCopy.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnCopy.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -180,7 +172,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnPaste, gbc_btnPaste);
         btnPaste.addActionListener(e -> paste());
         btnPaste.setFocusable(false);
-//        btnPaste.setIcon(new ImageIcon(getClass().getResource("../../../icons/paste.png")));
         btnPaste.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnPaste.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -193,7 +184,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnCut, gbc_btnCut);
         btnCut.addActionListener(e -> cut());
         btnCut.setFocusable(false);
-//        btnCut.setIcon(new ImageIcon(getClass().getResource("../../../icons/cut.png")));
         btnCut.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnCut.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -206,7 +196,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnCompile, gbc_btnCompile);
         btnCompile.addActionListener(e -> compile());
         btnCompile.setFocusable(false);
-//        btnCompile.setIcon(new ImageIcon(getClass().getResource("../../../icons/play.png")));
         btnCompile.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnCompile.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -219,7 +208,6 @@ public class UserInterface extends JFrame {
         buttonPanel.add(btnTeam, gbc_btnTeam);
         btnTeam.addActionListener(e -> printTeamName());
         btnTeam.setFocusable(false);
-//        btnTeam.setIcon(new ImageIcon(getClass().getResource("../../../icons/team.png")));
         btnTeam.setVerticalTextPosition(SwingConstants.BOTTOM);
         btnTeam.setHorizontalTextPosition(SwingConstants.CENTER);
 
@@ -258,7 +246,7 @@ public class UserInterface extends JFrame {
     }
 
     /*
-     * Operações dos botões.
+     * Botões.
      */
 
     private void newFile() {
